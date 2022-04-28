@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git_checkout') {
              steps {
-                git branch: 'main', credentialsId: '6eb49cdc-cd7e-4037-9404-1b849b0fff7e', url: 'https://github.com/sathish103/k8s-multistage-app.git'
+                git branch: 'main', credentialsId: '6eb49cdc-cd7e-4037-9404-1b849b0fff7e', url: 'https://github.com/sathish103/k8s-java-app.git'
             }
         }
         stage('docker login') {
